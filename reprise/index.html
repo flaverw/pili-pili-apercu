@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Pili Pili — Pizza napolitaine artisanale · Six-Fours-les-Plages</title>
+<meta name="description" content="Pizza napolitaine artisanale à Six-Fours-les-Plages. Pâte longue fermentation, tomates San Marzano, four fabriqué à Gênes. Sur place, à emporter, livraison.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--vert:#2d8a3a;--vert-f:#1f6b2b;--nuit:#14231a;--creme:#f6f4ee;--tomate:#c0392b;--gris:#4a5750}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Work Sans',sans-serif;color:#1c261f;background:var(--creme);font-size:17px;line-height:1.6}
+h1,h2,h3,.disp{font-family:'Fraunces',serif;line-height:1.1}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.btn{display:inline-block;font-family:'Work Sans',sans-serif;font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:0;padding:14px 26px;border-radius:8px;transition:.2s}
+.btn-vert{background:var(--vert);color:#fff}.btn-vert:hover{background:var(--vert-f)}
+.btn-out{background:transparent;border:2px solid rgba(255,255,255,.8);color:#fff}.btn-out:hover{background:#fff;color:var(--vert-f)}
+.demo{position:fixed;top:0;left:0;right:0;z-index:200;background:var(--nuit);color:#fff;text-align:center;font-size:11.5px;letter-spacing:.7px;text-transform:uppercase;padding:5px;font-weight:600}
+.demo b{color:#8fd39a}
+header.site{position:sticky;top:24px;z-index:150;background:rgba(246,244,238,.95);backdrop-filter:blur(8px);border-bottom:1px solid #e4e0d5}
+header.site .wrap{display:flex;align-items:center;gap:16px;height:64px}
+header .logo{height:40px}
+header nav{margin-left:auto;display:flex;gap:2px;align-items:center;flex-wrap:wrap}
+header nav a{font-size:13px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;padding:8px 12px;border-radius:6px;opacity:.85}
+header nav a:hover{opacity:1;background:#e9e5da}
+header nav a.cta{background:var(--vert);color:#fff;opacity:1}
+.hero{position:relative;min-height:76vh;display:grid;align-items:end;background:#14231a url('photos/pizza-ragu.jpg') center/cover;isolation:isolate}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,35,26,.25) 20%,rgba(20,35,26,.82) 100%);z-index:-1}
+.hero .wrap{padding:56px 20px 50px;color:#fff}
+.hero .sur{font-size:12.5px;letter-spacing:.28em;text-transform:uppercase;color:#8fd39a;font-weight:600;margin-bottom:12px}
+.hero h1{color:#fff;font-size:clamp(34px,6vw,60px);font-weight:600;max-width:15ch;text-shadow:0 2px 16px rgba(0,0,0,.4)}
+.hero h1 em{font-style:italic;color:#a7dfad}
+.hero p{margin:14px 0 22px;font-size:19px;max-width:42ch;color:#eef3ea}
+.hero .actions{display:flex;gap:12px;flex-wrap:wrap}
+.confiance{background:var(--vert);color:#fff}
+.confiance .wrap{display:flex;flex-wrap:wrap;gap:8px 34px;justify-content:center;padding:15px 20px;font-size:14px;font-weight:600}
+.confiance b{color:#d6f0d9}
+section{padding:72px 0}
+.sh{text-align:center;margin-bottom:34px}
+.sh .k{font-size:12.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--vert);font-weight:700}
+.sh h2{font-size:clamp(27px,4vw,40px);font-weight:600;margin-top:6px}
+.sh p{max-width:56ch;margin:8px auto 0;color:var(--gris)}
+.sh h2 em{font-style:italic;color:var(--tomate)}
+/* carte */
+.carte{background:#fff}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:12px 40px}
+.plat{display:flex;align-items:baseline;gap:10px;padding:9px 0;border-bottom:1px dotted #e0dccf}
+.plat .n{font-family:'Fraunces',serif;font-weight:600;font-size:16.5px;color:var(--nuit)}
+.plat .d{flex:1;font-size:13.5px;color:#8a8578;padding-left:8px}
+.plat .p{font-weight:700;color:var(--vert);white-space:nowrap;font-size:15.5px}
+.grp-titre{grid-column:1/-1;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--tomate);font-weight:700;margin-top:22px;border-bottom:2px solid var(--vert);padding-bottom:6px}
+.grp-titre:first-child{margin-top:0}
+.carte .note{text-align:center;margin-top:22px;font-size:13px;color:#9a9488}
+/* commande */
+.cmd-sec{background:linear-gradient(180deg,var(--creme),#ece8dd)}
+.cmd{display:grid;grid-template-columns:1.35fr .85fr;gap:26px;align-items:start}
+.panel{background:#fff;border-radius:14px;box-shadow:0 14px 36px rgba(30,60,35,.1);padding:22px}
+.panel h3{font-family:'Fraunces',serif;font-size:20px;margin-bottom:14px}
+.mode{display:flex;gap:8px;margin-bottom:16px}
+.mode button{flex:1;border:2px solid #e5e1d6;background:#fff;border-radius:10px;padding:11px;font-weight:600;font-size:13px;cursor:pointer;color:#444}
+.mode button.on{border-color:var(--vert);background:#f0f7f0;color:var(--vert-f)}
+.mlist{max-height:340px;overflow:auto;margin:-6px -6px 6px;padding:6px}
+.mrow{display:flex;align-items:center;gap:10px;padding:9px 8px;border-radius:9px;cursor:pointer}
+.mrow:hover{background:#f5f2ea}
+.mrow .n{font-family:'Fraunces',serif;font-weight:600;font-size:15px;color:var(--nuit)}
+.mrow .dd{font-size:12px;color:#9a9488}
+.mrow .p{margin-left:auto;font-weight:700;color:var(--vert)}
+.mrow .add{background:var(--vert);color:#fff;border:0;border-radius:7px;width:30px;height:30px;font-size:18px;cursor:pointer;flex-shrink:0}
+.cart h3{font-family:'Fraunces',serif;font-size:19px;margin-bottom:6px}
+.empty{color:#a29c90;text-align:center;padding:22px 0;font-size:14px}
+.line{display:flex;gap:8px;align-items:center;padding:8px 0;border-bottom:1px dashed #eae5d8;font-size:14.5px}
+.line .ln{font-weight:600;flex:1}
+.line .lp{font-weight:700;white-space:nowrap}
+.line .rm{background:none;border:0;color:#c0392b;cursor:pointer;font-size:16px}
+.tot{display:flex;justify-content:space-between;font-family:'Fraunces',serif;font-weight:700;font-size:19px;margin:12px 0}
+.minw{background:#fdf3e7;border:1px solid #f0cf9c;color:#9a5b12;border-radius:9px;padding:8px 11px;font-size:12.5px;margin-bottom:10px;display:none}
+.minw.show{display:block}
+.note-d{font-size:12px;color:#a29c90;text-align:center;margin-top:9px}
+/* histoire */
+.hist .duo{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hist p{margin-bottom:14px;color:#3a463d}
+.hist p b{color:var(--nuit)}
+.hist img{border-radius:14px;box-shadow:0 18px 44px rgba(20,35,26,.22)}
+.puces{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.puce{background:#eef4ee;border:1px solid #d5e6d6;color:var(--vert-f);border-radius:999px;padding:7px 14px;font-size:13.5px;font-weight:600}
+/* avis */
+.avis{background:var(--nuit);color:#eef3ea}
+.avis .sh h2{color:#fff}.avis .sh .k{color:#8fd39a}
+.ag{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.av{background:#1e3227;border:1px solid #2b4535;border-radius:13px;padding:20px}
+.av .st{color:#e8c14a;letter-spacing:2px}
+.av p{font-style:italic;margin:10px 0;color:#dfe8dc}
+.av .q{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#8fd39a}
+.avis .src{text-align:center;margin-top:20px;color:#a9c4ad;font-size:14px}
+/* infos */
+.ig{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.ic{background:#fff;border:1px solid #e7e2d6;border-radius:13px;padding:22px}
+.ic h3{font-family:'Work Sans';font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--vert);margin-bottom:10px}
+.ic p,.ic li{font-size:15px;color:#4a5750}.ic ul{list-style:none}
+.ic li{display:flex;justify-content:space-between;gap:10px;padding:3px 0}.ic li b{color:var(--nuit)}
+footer{background:#0f1a13;color:#9fb0a4;text-align:center;padding:38px 20px;font-size:14px}
+footer img{height:38px;margin:0 auto 12px}
+footer .ev{margin-top:12px;font-size:12px;color:#7d8c82}footer .ev b{color:#8fd39a}
+.modal{position:fixed;inset:0;background:rgba(15,26,19,.6);display:none;align-items:center;justify-content:center;z-index:300;padding:20px}
+.modal.show{display:flex}
+.modal .box{background:#fff;border-radius:14px;max-width:420px;padding:28px;text-align:center}
+.modal h3{font-family:'Fraunces',serif;font-size:22px;margin-bottom:8px}
+.modal .dtag{background:#f0f7f0;border-radius:8px;padding:10px;font-size:13px;margin:14px 0;color:var(--vert-f)}
+body.qa .hero{min-height:auto}body.qa .hero .wrap{padding-top:120px}
+@media(max-width:820px){.cols,.cmd,.hist .duo{grid-template-columns:1fr}header nav a:not(.cta){display:none}.hero{min-height:62vh}}
+</style>
+</head>
+<body>
+<div class="demo">Maquette de démonstration — <b>Everywhere</b> · piste « reprise » : votre identité, complétée · aucune commande réelle</div>
+<header class="site"><div class="wrap">
+  <img src="photos/logo.png" alt="Pili Pili" class="logo">
+  <nav>
+    <a href="#carte">La carte</a><a href="#histoire">La maison</a><a href="#avis">Avis</a><a href="#infos">Infos</a>
+    <a href="#commander" class="cta">Commander</a>
+  </nav>
+</div></header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="sur">Six-Fours-les-Plages · pizza napolitaine</div>
+    <h1>La vraie <em>napolitaine</em>, faite ici.</h1>
+    <p>Pâte à longue fermentation, tomates San Marzano, four fabriqué à Gênes. À emporter, en livraison, ou à table.</p>
+    <div class="actions">
+      <a class="btn btn-vert" href="#commander">Commander en ligne</a>
+      <a class="btn btn-out" href="#carte">Voir la carte</a>
+    </div>
+  </div>
+</div>
+
+<div class="confiance"><div class="wrap">
+  <div><b>4,8/5</b> Google · ~120 avis</div>
+  <div><b>San Marzano</b> · four de Gênes</div>
+  <div><b>Fait maison</b> · petits producteurs italiens</div>
+  <div><b>Panuozzo</b> napolitain</div>
+</div></div>
+
+<!-- LA CARTE -->
+<section class="carte" id="carte">
+  <div class="wrap">
+    <div class="sh"><div class="k">La carte</div><h2>Nos pizzas &amp; <em>panuozzos</em></h2>
+      <p>Carte courte, maîtrisée. Tomate = double concentré de San Marzano. Les prix sont ceux du restaurant.</p></div>
+    <div class="cols" id="carte-liste"></div>
+    <p class="note">Panuozzos non produits du 15 juin au 30 septembre. Origine, provenance et allergènes communiqués au restaurant.</p>
+  </div>
+</section>
+
+<!-- COMMANDER -->
+<section class="cmd-sec" id="commander">
+  <div class="wrap">
+    <div class="sh"><div class="k">En direct — sans commission</div><h2>Commander en ligne</h2>
+      <p>Vous composez, la cuisine reçoit, vous récupérez ou vous faites livrer — <strong>sans passer par une plateforme</strong>. Le four fait le reste.</p></div>
+    <div class="cmd">
+      <div class="panel">
+        <div class="mode" id="mode">
+          <button data-m="emporter" class="on">À emporter</button>
+          <button data-m="collect">Click &amp; collect</button>
+          <button data-m="livraison">Livraison<br><span style="font-weight:400;font-size:11px;color:#999">dès 20 €</span></button>
+        </div>
+        <div class="mlist" id="mlist"></div>
+      </div>
+      <div class="panel cart">
+        <h3>🛒 Votre commande</h3>
+        <div id="lines"><div class="empty">Ajoutez une pizza pour commencer.</div></div>
+        <div class="minw" id="minw">Minimum <b>20 €</b> en livraison — encore <span id="reste"></span> €.</div>
+        <div class="tot"><span>Total</span><span id="total">0,00 €</span></div>
+        <button class="btn btn-vert" style="width:100%" onclick="valider()">Valider ma commande</button>
+        <p class="note-d">Démonstration — prix réels de la carte, aucune commande transmise.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HISTOIRE -->
+<section class="hist" id="histoire">
+  <div class="wrap"><div class="duo">
+    <div>
+      <div class="sh" style="text-align:left;margin-bottom:14px"><div class="k">La maison</div></div>
+      <h2 style="font-size:clamp(24px,3.4vw,34px);margin-bottom:14px">L'Italie, honnêtement.</h2>
+      <p>Chez Pili Pili, la pizza se travaille comme en Campanie : une <b>pâte à longue fermentation</b>,
+      légère et digeste, cuite dans un <b>four fabriqué à Gênes</b>. Les tomates sont des <b>San Marzano</b>,
+      les fromages et charcuteries sont <b>tranchés sur place</b>, les produits viennent de petits
+      producteurs italiens.</p>
+      <p>Une <b>carte courte</b>, maîtrisée jusqu'au bout — jusqu'au panuozzo, ce sandwich napolitain à
+      base de pâte à pizza, et au tiramisu maison. On préfère bien faire peu, que faire beaucoup à moitié.</p>
+      <div class="puces">
+        <span class="puce">Longue fermentation</span><span class="puce">San Marzano</span>
+        <span class="puce">Four de Gênes</span><span class="puce">Tranché maison</span><span class="puce">Panuozzo</span>
+      </div>
+    </div>
+    <img src="photos/pomodori.jpg" alt="Tomates San Marzano">
+  </div></div>
+</section>
+
+<!-- AVIS -->
+<section class="avis" id="avis">
+  <div class="wrap">
+    <div class="sh"><div class="k">Ils en parlent</div><h2>4,8/5 sur ~120 avis</h2></div>
+    <div class="ag">
+      <div class="av"><div class="st">★★★★★</div><p>« La pâte est excellente, les produits sont frais, les pizzas bien garnies. Enfin une pizzeria comme ça à côté de chez soi ! »</p><div class="q">Google</div></div>
+      <div class="av"><div class="st">★★★★★</div><p>« Les pizzas et le tiramisu maison sont délicieux, le personnel très sympathique. »</p><div class="q">Google</div></div>
+      <div class="av"><div class="st">★★★★★</div><p>« Pâte exceptionnelle ainsi que la garniture. N'hésitez pas à essayer ces pizzas ! »</p><div class="q">Patricia C. · TripAdvisor</div></div>
+      <div class="av"><div class="st">★★★★★</div><p>« Top équipe, top service, top qualité des produits… je recommande vivement. »</p><div class="q">Google</div></div>
+    </div>
+    <p class="src">Avis publics réels — Google (4,8/5), TripAdvisor, relais presse Var Actu (« inspiration étoilée »).</p>
+  </div>
+</section>
+
+<!-- INFOS -->
+<section id="infos">
+  <div class="wrap">
+    <div class="sh"><div class="k">Infos pratiques</div><h2>Nous trouver</h2></div>
+    <div class="ig">
+      <div class="ic"><h3>📍 Adresse</h3><p>777 avenue du Maréchal de Lattre de Tassigny<br>83140 Six-Fours-les-Plages</p></div>
+      <div class="ic"><h3>🕒 Horaires</h3><ul>
+        <li><b>Tous les soirs</b><span>17h – 22h</span></li>
+        <li><b>Midi</b><span>Lun · Mar · Jeu · Ven</span></li>
+      </ul></div>
+      <div class="ic"><h3>☎ Contact</h3><p><b>07 78 43 50 96</b><br>Sur place · à emporter · livraison<br><span style="color:#9a9488;font-size:14px">Six-Fours · La Seyne sud · Sanary · min. 20 €</span></p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <img src="photos/logo.png" alt="Pili Pili">
+  <div>Pili Pili · 777 av. du Maréchal de Lattre de Tassigny, 83140 Six-Fours-les-Plages · 07 78 43 50 96</div>
+  <div class="ev">Maquette de démonstration <b>Everywhere</b> — piste « reprise » : votre identité, complétée (commande en direct, carte lisible, votre histoire, mentions légales à jour). Contenus et prix repris de votre carte. Aucune donnée collectée.</div>
+</footer>
+
+<div class="modal" id="modal"><div class="box">
+  <h3 id="mt">Merci !</h3><p id="mx" style="color:#4a5750;font-size:15px"></p>
+  <div class="dtag">🛈 Démonstration — dans la vraie version, la commande part directement en cuisine, sans commission.</div>
+  <button class="btn btn-vert" onclick="document.getElementById('modal').classList.remove('show')">Fermer</button>
+</div></div>
+
+<script>
+if(/[ty]=\d/.test(location.hash))document.body.classList.add('qa');
+var MENU={
+ "Pizzas":[
+  ["Marinara",9,"Tomate, ail, origan, basilic"],["Prosciutto-Formaggio",12,"Jambon aux herbes, fior di latte"],
+  ["Margherita",12,"Tomate, fior di latte, parmesan, basilic"],["Anchois",12,"Anchois de Cantabrie, olives taggiasche"],
+  ["Peperoni",14,"Peperoni de Calabre, jalapeños"],["Buffala",14.5,"Cerises confites, buffala, Guérande"],
+  ["4 Formaggio",14.5,"Gorgonzola, mozzarella, fontina, taleggio"],["Chèvre Miel",15.5,"Chèvre, pancetta, miel de Saint-Cyr"],
+  ["Fungo",15,"Champignons rôtis, taleggio, oignons confits"],["Zucchini Cacio e Pepe",15.5,"Courgette, pesto, burrata"],
+  ["Montanara",15.5,"Pancetta, pomme de terre, taleggio"],["Perugina",16,"Saucisse porc noir au fenouil, pesto genovese"],
+  ["Roquette",16.5,"San Marzano, buffala, roquette, balsamique"]
+ ],
+ "Panuozzos":[
+  ["Panuozzo Cacio e Pepe",10,"Roquette, courgette, burrata"],["Panuozzo Prosciutto Burrata",10,"Jambon aux herbes, burrata"],
+  ["Panuozzo Montanara",10,"Pancetta, pomme de terre, taleggio"],["Panuozzo 4 Formaggio",12,"4 fromages fondus"]
+ ],
+ "Dessert & boissons":[
+  ["Tiramisu du moment",5,"Parfum variable, maison"],["Soft 33 cl",2.5,""],["Bière Desperados 33 cl",3.5,""],
+  ["Eau plate 33 cl",2,""],["Eau gazeuse Orezza 50 cl",3.5,""]
+ ]
+};
+var EUR=function(n){return n.toFixed(2).replace('.',',')+' €';};
+// carte affichee
+var cl=document.getElementById('carte-liste');
+Object.keys(MENU).forEach(function(g){
+  var t=document.createElement('div');t.className='grp-titre';t.textContent=g;cl.appendChild(t);
+  MENU[g].forEach(function(p){
+    var d=document.createElement('div');d.className='plat';
+    d.innerHTML='<span class="n">'+p[0]+'</span>'+(p[2]?'<span class="d">'+p[2]+'</span>':'<span class="d"></span>')+'<span class="p">'+EUR(p[1])+'</span>';
+    cl.appendChild(d);
+  });
+});
+// commande
+var mode='emporter',cart=[];
+document.querySelectorAll('#mode button').forEach(function(b){b.onclick=function(){document.querySelectorAll('#mode button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');mode=b.getAttribute('data-m');render();};});
+var ml=document.getElementById('mlist');
+Object.keys(MENU).forEach(function(g){
+  MENU[g].forEach(function(p){
+    var r=document.createElement('div');r.className='mrow';
+    r.innerHTML='<div><div class="n">'+p[0]+'</div>'+(p[2]?'<div class="dd">'+p[2]+'</div>':'')+'</div><span class="p">'+EUR(p[1])+'</span><button class="add">+</button>';
+    r.querySelector('.add').onclick=function(){cart.push({n:p[0],p:p[1]});render();};
+    ml.appendChild(r);
+  });
+});
+function render(){
+  var L=document.getElementById('lines');
+  if(!cart.length){L.innerHTML='<div class="empty">Ajoutez une pizza pour commencer.</div>';}
+  else{L.innerHTML=cart.map(function(l,i){return '<div class="line"><span class="ln">'+l.n+'</span><span class="lp">'+EUR(l.p)+'</span><button class="rm" onclick="rm('+i+')">×</button></div>';}).join('');}
+  var t=cart.reduce(function(s,l){return s+l.p;},0);
+  document.getElementById('total').textContent=EUR(t);
+  var w=document.getElementById('minw');
+  if(mode==='livraison'&&t>0&&t<20){w.classList.add('show');document.getElementById('reste').textContent=(20-t).toFixed(2).replace('.',',');}else{w.classList.remove('show');}
+}
+window.rm=function(i){cart.splice(i,1);render();};
+function valider(){
+  var t=cart.reduce(function(s,l){return s+l.p;},0);
+  if(!cart.length){alert('Votre commande est vide.');return;}
+  if(mode==='livraison'&&t<20){alert('Minimum 20 € en livraison.');return;}
+  var m={emporter:'à emporter',collect:'click & collect',livraison:'en livraison'};
+  document.getElementById('mt').textContent='Commande prête à partir au four';
+  document.getElementById('mx').textContent=cart.length+' article(s) · '+EUR(t)+' · '+m[mode]+'.';
+  document.getElementById('modal').classList.add('show');
+}
+</script>
+</body>
+</html>
