@@ -26,8 +26,11 @@ a.porte.b .l{color:#e0513f}
 .porte p{font-size:14px;color:#cfe0d1;line-height:1.55}
 .porte .go{display:inline-block;margin-top:16px;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#8fd39a}
 a.porte.b .go{color:#e0513f}
+a.porte.offre{grid-column:1 / -1;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+a.porte.offre .txt{text-align:left}
+a.porte.offre .go{margin-top:0;white-space:nowrap}
 .pied{margin-top:34px;font-size:12px;color:#8aa08f}
-@media(max-width:680px){.portes{grid-template-columns:1fr}}
+@media(max-width:680px){.portes{grid-template-columns:1fr}a.porte.offre{flex-direction:column;align-items:flex-start}}
 </style>
 </head>
 <body>
@@ -50,6 +53,14 @@ a.porte.b .go{color:#e0513f}
       <p>Une nouvelle direction artistique — charbon, rouge San Marzano — qui raconte la maison en
       chapitres : la pâte, le four de Gênes, les produits, la carte prix compris.</p>
       <span class="go">Voir la piste B →</span>
+    </a>
+    <a class="porte offre" href="offre/">
+      <div class="txt">
+        <span class="l">Et le tarif</span>
+        <h2>L'offre</h2>
+        <p>Trois formules posées simplement — Origine, Singulier, Everywhere. À votre rythme, sans engagement de durée.</p>
+      </div>
+      <span class="go">Voir l'offre →</span>
     </a>
   </div>
   <p class="pied">Démonstration Everywhere — non indexée, formulaires inertes, aucune donnée collectée.
