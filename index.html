@@ -1,76 +1,59 @@
-<!-- cadenas-everywhere -->
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>Accès protégé — Everywhere</title>
+<title>Pili Pili — Napoli à Six-Fours · démonstration Everywhere</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--noir:#14110f;--or:#c9a24b;--creme:#f3ecdd}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;min-height:100vh;
- background:radial-gradient(120% 120% at 50% 0%,#241f1a,var(--noir));color:var(--creme);
- display:flex;align-items:center;justify-content:center;padding:24px}
-.card{max-width:420px;width:100%;text-align:center}
-.mark{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--or);margin-bottom:18px}
-.lock{font-size:40px;margin-bottom:14px}
-h1{font-size:22px;font-weight:600;line-height:1.25;margin-bottom:8px}
-p.sub{font-size:14px;color:#b9b0a0;margin-bottom:22px;line-height:1.5}
-form{display:flex;gap:8px;flex-direction:column}
-input{width:100%;background:#1c1814;border:1px solid rgba(201,162,75,.4);color:var(--creme);
- padding:14px 16px;font-size:16px;border-radius:8px;text-align:center;letter-spacing:.05em}
-input:focus{outline:none;border-color:var(--or)}
-button{background:var(--or);color:var(--noir);border:none;padding:14px;font-size:15px;font-weight:600;
- border-radius:8px;cursor:pointer;letter-spacing:.03em}
-button:hover{filter:brightness(1.08)}
-.err{color:#e6857a;font-size:13px;min-height:18px;margin-top:4px}
-.foot{margin-top:26px;font-size:11px;color:#7c7364;line-height:1.5}
-</style></head>
+body{font-family:'Work Sans',sans-serif;min-height:100vh;background:#14231a;color:#f3ecdf;display:flex;align-items:center;justify-content:center;padding:26px}
+.hub{max-width:720px;width:100%;text-align:center}
+.sur{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:#8fd39a;font-weight:600;margin-bottom:14px}
+h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(28px,5vw,46px);line-height:1.05}
+h1 em{font-style:italic;color:#e0513f}
+.sous{margin:14px auto 32px;color:#cfe0d1;max-width:52ch;font-size:15.5px}
+a.porte{display:flex;align-items:center;gap:18px;text-align:left;text-decoration:none;color:inherit;background:rgba(243,236,223,.06);border:1.5px solid rgba(243,236,223,.2);border-radius:16px;padding:26px 26px;margin-bottom:14px;transition:.2s}
+a.porte:hover{background:rgba(243,236,223,.12);border-color:#8fd39a;transform:translateY(-2px)}
+a.porte .ic{font-size:30px;flex-shrink:0}
+a.porte .tx{flex:1}
+a.porte .l{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:#8fd39a}
+a.porte h2{font-family:'Fraunces',serif;font-weight:700;font-size:23px;margin:6px 0 8px;color:#f3ecdf}
+a.porte p{font-size:14px;color:#cfe0d1;line-height:1.5}
+a.porte .go{margin-left:auto;font-size:22px;color:#8fd39a;flex-shrink:0}
+a.offre{border-color:rgba(224,81,63,.5)}a.offre:hover{border-color:#e0513f}a.offre .l,a.offre .go{color:#e0513f}
+.pied{margin-top:30px;font-size:12px;color:#8aa08f}
+@media(max-width:620px){a.porte{flex-direction:column;text-align:center}a.porte .go{margin:0}}
+</style>
+</head>
 <body>
-<div class="card">
-  <div class="mark">Everywhere</div>
-  <div class="lock">&#128274;</div>
-  <h1>Accès protégé</h1>
-  <p class="sub">Cette démonstration est réservée. Saisissez votre code d'accès pour la consulter.</p>
-  <form id="f"><input id="pw" type="password" placeholder="Code d'accès" autocomplete="off" autofocus>
-  <button type="submit">Entrer</button></form>
-  <div class="err" id="e"></div>
-  <div class="foot">Everywhere — cabinet d'accompagnement numérique.<br>Contenu chiffré. Un code par visiteur, communiqué par Everywhere.</div>
+<div class="hub">
+  <div class="sur">Pili Pili · Six-Fours-les-Plages — démonstration</div>
+  <h1>La napolitaine,<br><em>dans le temps.</em></h1>
+  <p class="sous">Votre site préparé à partir de votre carte, de vos avis et de votre savoir-faire —
+  raconté par ce qui fait la vraie napolitaine : le temps de la pâte.</p>
+
+  <a class="porte" href="reprise/">
+    <div class="ic">🍕</div>
+    <div class="tx"><div class="l">La maquette</div>
+      <h2>Voir votre site</h2>
+      <p>« 48 heures » — le voyage de la pâte de H‑48 au four, la carte, la commande en direct.</p></div>
+    <div class="go">→</div>
+  </a>
+
+  <a class="porte offre" href="offre/">
+    <div class="ic">📋</div>
+    <div class="tx"><div class="l">L'offre</div>
+      <h2>Nos trois formules</h2>
+      <p>Origine, Singulier, Everywhere — à votre rythme, sans engagement de durée.</p></div>
+    <div class="go">→</div>
+  </a>
+
+  <p class="pied">Démonstration Everywhere — non indexée, formulaires inertes, aucune donnée collectée.
+  Contenus et prix repris de votre carte ; tout se valide ensemble.</p>
 </div>
-<script>
-(function(){
- var D={"v":1,"iters":210000,"iv":"LmRUo7r50mwOozdm","ct":"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","wraps":[{"role":"client","salt":"GkPC2I6Gr8+j2Qkkp2+O9w==","iv":"/5qfhPjmMOXm3u5+","wrapped":"zSZjkq9UpSbBT4zmDycrwpX5u1/xTTnRvcXGxnFhT5TT5ehonCcOhmHJ6Pk9ZZsK"}]};
- var dec=function(s){var b=atob(s),u=new Uint8Array(b.length);for(var i=0;i<b.length;i++)u[i]=b.charCodeAt(i);return u;};
- var enc=new TextEncoder();
- async function derive(pw,salt){
-  var km=await crypto.subtle.importKey('raw',enc.encode(pw),'PBKDF2',false,['deriveKey']);
-  return crypto.subtle.deriveKey({name:'PBKDF2',salt:salt,iterations:D.iters,hash:'SHA-256'},km,{name:'AES-GCM',length:256},false,['decrypt']);
- }
- async function tryUnlock(pw){
-  for(var i=0;i<D.wraps.length;i++){
-   var w=D.wraps[i];
-   try{
-    var wk=await derive(pw,dec(w.salt));
-    var ckRaw=new Uint8Array(await crypto.subtle.decrypt({name:'AES-GCM',iv:dec(w.iv)},wk,dec(w.wrapped)));
-    var ck=await crypto.subtle.importKey('raw',ckRaw,'AES-GCM',false,['decrypt']);
-    var html=new TextDecoder().decode(await crypto.subtle.decrypt({name:'AES-GCM',iv:dec(D.iv)},ck,dec(D.ct)));
-    return {ok:true,role:w.role,html:html};
-   }catch(e){}
-  }
-  return {ok:false};
- }
- function render(html){document.open();document.write(html);document.close();}
- async function boot(){
-  var pw=null;try{pw=sessionStorage.getItem('ew_pass');}catch(e){}
-  if(pw){var r=await tryUnlock(pw);if(r.ok){render(r.html);return;}}
-  document.getElementById('f').addEventListener('submit',async function(ev){
-   ev.preventDefault();
-   var v=document.getElementById('pw').value;
-   document.getElementById('e').textContent='';
-   var r=await tryUnlock(v);
-   if(r.ok){try{sessionStorage.setItem('ew_pass',v);}catch(e){}render(r.html);}
-   else{document.getElementById('e').textContent='Code incorrect.';document.getElementById('pw').select();}
-  });
- }
- if(!crypto||!crypto.subtle){document.getElementById('e').textContent='Navigateur non compatible.';}else{boot();}
-})();
-</script>
-</body></html>
+</body>
+</html>
