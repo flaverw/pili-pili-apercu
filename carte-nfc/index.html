@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,500&family=Work+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+@page{ size:85mm 55mm; margin:0; }
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:85mm;height:55mm}
+body{font-family:'Work Sans',sans-serif;background:#14231a;color:#f3ecdf;overflow:hidden}
+.card{width:85mm;height:55mm;display:flex;position:relative}
+.left{flex:1.25;padding:5mm 4mm 4mm;display:flex;flex-direction:column;
+  background:radial-gradient(120% 130% at 15% 10%,#256b30 0%,#14231a 70%)}
+.left .logo{height:9mm;width:auto;object-fit:contain;object-position:left;margin-bottom:1.5mm;filter:brightness(0) invert(1)}
+.tag{font-family:'Fraunces',serif;font-style:italic;font-size:3.6mm;color:#fff;line-height:1.1;margin-top:.5mm}
+.tag b{color:#8fd39a;font-style:normal}
+.meta{margin-top:auto;font-family:'Work Sans';font-size:2.3mm;line-height:1.55;color:#e6efe6}
+.meta .g{color:#8fd39a}
+.right{flex:1;background:#f3ecdf;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:3mm}
+.right .qr{width:25mm;height:25mm}
+.right .cta{font-family:'Fraunces',serif;font-weight:700;font-size:3mm;color:#1f6b2b;text-align:center;margin-top:1.5mm;line-height:1.05}
+.right .scan{font-size:1.9mm;letter-spacing:.5px;text-transform:uppercase;color:#8a8578;margin-top:.5mm}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="left">
+    <img class="logo" src="logo.png" alt="Pili Pili">
+    <div class="tag">La vraie <b>napolitaine</b>,<br>faite ici.</div>
+    <div class="meta">
+      <div>☎ <span class="g">07 78 43 50 96</span></div>
+      <div>📍 777 av. Mal de Lattre de Tassigny, Six-Fours</div>
+    </div>
+  </div>
+  <div class="right">
+    <img class="qr" src="qr-pilipili.png" alt="QR commander en ligne">
+    <div class="cta">Commander<br>en ligne</div>
+    <div class="scan">Scannez le code</div>
+  </div>
+</div>
+</body>
+</html>

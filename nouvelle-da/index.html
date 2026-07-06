@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Pili Pili — Napoli à Six-Fours · pizza napolitaine artisanale</title>
+<meta name="description" content="Napoli à Six-Fours-les-Plages : pâte à longue fermentation, tomates San Marzano, four fabriqué à Gênes. La vraie pizza napolitaine, faite ici.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--charbon:#161311;--creme:#f3ecdf;--tomate:#c62b1f;--tomate-c:#e0513f;--basilic:#4f7a3f;--or:#d9a441;--nuit:#101a13}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Work Sans',sans-serif;background:var(--creme);color:#1a1512;font-size:17px;line-height:1.65}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.045;mix-blend-mode:multiply;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='220' height='220' filter='url(%23n)' opacity='0.55'/></svg>")}
+h1,h2,h3,.disp{font-family:'Fraunces',serif;line-height:1.04}
+img{max-width:100%;display:block}a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px;position:relative;z-index:2}
+.btn{display:inline-block;font-weight:700;font-size:14px;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:0;padding:15px 28px;border-radius:999px;transition:.2s}
+.btn-tom{background:var(--tomate);color:#fff}.btn-tom:hover{background:#a8231a}
+.btn-cr{background:transparent;border:2px solid rgba(243,236,223,.75);color:var(--creme)}.btn-cr:hover{background:var(--creme);color:var(--charbon)}
+.btn-ch{background:var(--charbon);color:var(--creme)}
+.demo{position:fixed;top:0;left:0;right:0;z-index:200;background:var(--nuit);color:#fff;text-align:center;font-size:11.5px;letter-spacing:.7px;text-transform:uppercase;padding:5px;font-weight:600}
+.demo b{color:var(--tomate-c)}
+header.site{position:sticky;top:24px;z-index:150;background:rgba(22,19,17,.93);backdrop-filter:blur(8px);color:var(--creme)}
+header.site .wrap{display:flex;align-items:center;gap:16px;height:62px}
+.marque{font-family:'Fraunces',serif;font-weight:900;font-size:20px;letter-spacing:.04em;text-decoration:none}
+.marque em{color:var(--tomate-c);font-style:italic;font-weight:500}
+header nav{margin-left:auto;display:flex;gap:2px;align-items:center}
+header nav a{font-size:13px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;padding:8px 12px;border-radius:999px;opacity:.85}
+header nav a:hover{opacity:1;background:rgba(243,236,223,.12)}
+header nav a.cta{background:var(--tomate);opacity:1}
+/* hero */
+.hero{background:var(--charbon);color:var(--creme);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center;min-height:86vh;padding-top:44px;padding-bottom:44px}
+.hero .sur{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--or);font-weight:600;margin-bottom:18px}
+.hero .sur::before{content:"";width:34px;height:2px;background:var(--tomate)}
+.hero h1{font-size:clamp(46px,8vw,104px);line-height:.92;font-weight:900;letter-spacing:-.01em}
+.hero h1 .l{display:block}
+.hero h1 em{color:var(--tomate-c);font-style:italic;font-weight:500}
+.hero .nel{margin:22px 0 8px;font-size:19px;color:#e4dccd;max-width:38ch}
+.hero .nel b{color:#fff}
+.hero .depuis{font-size:13px;color:var(--or);letter-spacing:.14em;text-transform:uppercase;margin-bottom:26px}
+.hero .actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero .visuel{position:relative}
+.hero .visuel img{border-radius:50%;aspect-ratio:1;object-fit:cover;box-shadow:0 30px 70px rgba(0,0,0,.55);border:6px solid #1f1a16}
+.hero .badge{position:absolute;right:-8px;bottom:24px;background:var(--creme);color:var(--charbon);border-radius:14px;padding:12px 16px;box-shadow:0 16px 40px rgba(0,0,0,.4);transform:rotate(-3deg)}
+.hero .badge .n{font-family:'Fraunces',serif;font-weight:900;font-size:24px}
+.hero .badge .s{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#7a6f61}
+.ruban{background:var(--tomate);color:#fff;overflow:hidden;white-space:nowrap;padding:11px 0;font-family:'Fraunces',serif;font-style:italic;font-size:16px}
+.ruban .rt{display:inline-block}
+.ruban .rt span{padding-right:44px}
+section{padding:84px 0;position:relative}
+.chap{display:flex;align-items:baseline;gap:16px;margin-bottom:8px}
+.chap .num{font-family:'Fraunces',serif;font-size:14px;font-weight:700;color:var(--tomate);letter-spacing:.12em}
+.chap .fil{flex:1;height:1.5px;background:linear-gradient(90deg,var(--tomate),transparent)}
+h2.titre{font-size:clamp(30px,4.6vw,52px);font-weight:900;line-height:1.0;margin-bottom:14px}
+h2.titre em{font-style:italic;font-weight:500;color:var(--tomate)}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .8s,transform .8s}.rev.vu{opacity:1;transform:none}
+/* pate / duo */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.pate p{margin-bottom:14px;color:#3a322b;max-width:52ch}.pate p b{color:var(--charbon)}
+.pate .cadre img{border-radius:16px;box-shadow:0 24px 60px rgba(22,19,17,.3)}
+.puces{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.puce{background:#eae1cf;border:1px solid #ddceb4;color:#6a4a1f;border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600}
+/* produits (bandeau sombre) */
+.prod{background:var(--charbon);color:var(--creme)}
+.prod .g{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:32px}
+.pc{background:#201a15;border:1px solid #2e2820;border-radius:15px;padding:24px;border-top:3px solid var(--tomate)}
+.pc .ic{font-size:24px;margin-bottom:10px}
+.pc h3{font-family:'Fraunces',serif;font-size:20px;margin-bottom:8px}
+.pc p{font-size:14.5px;color:#cabfad}
+/* carte */
+.carte .cols{display:grid;grid-template-columns:1fr 1fr;gap:8px 44px;margin-top:20px}
+.gt{grid-column:1/-1;font-family:'Fraunces',serif;font-style:italic;font-size:22px;color:var(--tomate);margin-top:22px}
+.gt:first-child{margin-top:0}
+.pl{display:flex;align-items:baseline;gap:8px;padding:8px 0;border-bottom:1px dotted #d8ccb4}
+.pl .n{font-weight:600;color:var(--charbon)}
+.pl .d{flex:1;font-size:13px;color:#94886f;padding-left:6px}
+.pl .p{font-family:'Fraunces',serif;font-weight:700;color:var(--tomate);white-space:nowrap}
+.carte .note{text-align:center;margin-top:22px;font-size:13px;color:#94886f}
+/* commander */
+.direct{background:var(--nuit);color:#fff}
+.direct h2.titre{color:#fff}
+.direct .d2{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px}
+.dc{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:26px}
+.dc h3{font-family:'Fraunces',serif;font-size:22px;margin-bottom:8px}
+.dc p{font-size:15px;color:#c7d3c9;margin-bottom:18px}
+.direct .note{margin-top:22px;font-size:13px;color:#8fa495;text-align:center;max-width:60ch;margin-left:auto;margin-right:auto}
+/* avis */
+.tem .b{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:26px}
+.t{background:#fff;border-radius:14px;padding:22px;box-shadow:0 12px 30px rgba(22,19,17,.1)}
+.t .st{color:var(--or);letter-spacing:2px}.t p{font-style:italic;color:#41372e;margin:10px 0}
+.t .q{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#a08a6a}
+.tem .total{text-align:center;margin-top:24px;font-family:'Fraunces',serif;font-size:19px}.tem .total b{color:var(--tomate)}
+/* infos */
+.infos{background:var(--creme)}
+.ig{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:26px}
+.ic{background:#fff;border-radius:14px;padding:24px;box-shadow:0 10px 26px rgba(22,19,17,.09)}
+.ic h3{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--tomate);margin-bottom:10px}
+.ic p,.ic li{font-size:15px;color:#4a4034}.ic ul{list-style:none}.ic li{display:flex;justify-content:space-between;gap:10px;padding:3px 0}.ic li b{color:var(--charbon)}
+footer{background:var(--charbon);color:#b3a690;text-align:center;padding:44px 22px;font-size:14px}
+footer .fm{font-family:'Fraunces',serif;font-weight:900;font-size:24px;color:var(--creme);margin-bottom:8px}
+footer .fm em{color:var(--tomate-c);font-style:italic;font-weight:500}
+footer .ev{margin-top:14px;font-size:12px;color:#877a63}footer .ev b{color:var(--or)}
+.modal{position:fixed;inset:0;background:rgba(16,13,11,.62);display:none;align-items:center;justify-content:center;z-index:300;padding:20px}
+.modal.show{display:flex}.modal .box{background:var(--creme);border-radius:16px;max-width:420px;padding:30px;text-align:center}
+.modal .dtag{background:#fff;border-radius:8px;padding:10px;font-size:13px;margin:14px 0;color:var(--basilic)}
+@media(max-width:880px){.hero .wrap{grid-template-columns:1fr;min-height:auto}.hero .visuel{order:-1;max-width:300px;margin:0 auto}.duo,.direct .d2,.carte .cols{grid-template-columns:1fr}header nav a:not(.cta){display:none}}
+body.qa .hero .wrap{min-height:auto;padding-top:90px;padding-bottom:70px}
+</style>
+</head>
+<body>
+<div class="demo">Maquette de démonstration — <b>Everywhere</b> · piste « nouvelle direction artistique » · aucune commande réelle</div>
+<header class="site"><div class="wrap">
+  <a class="marque" href="#haut">PILI <em>PILI</em></a>
+  <nav><a href="#pate">La pâte</a><a href="#carte">La carte</a><a href="#avis">Avis</a><a href="#infos">Infos</a><a href="#direct" class="cta">Commander</a></nav>
+</div></header>
+
+<div class="hero" id="haut">
+  <div class="wrap">
+    <div>
+      <div class="sur">Six-Fours-les-Plages · Var</div>
+      <h1><span class="l">Napoli</span><span class="l"><em>à Six-Fours.</em></span></h1>
+      <p class="nel">La <b>vraie pizza napolitaine</b>, faite ici : pâte à longue fermentation, tomates San Marzano, four fabriqué à Gênes.</p>
+      <div class="depuis">Cuisine italienne, honnêtement</div>
+      <div class="actions"><a class="btn btn-tom" href="#direct">Commander en ligne</a><a class="btn btn-cr" href="#carte">Voir la carte</a></div>
+    </div>
+    <div class="visuel">
+      <img src="photos/pizza-ragu.jpg" alt="Pizza napolitaine">
+      <div class="badge"><div class="n">4,8/5</div><div class="s">~120 avis Google</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="ruban"><div class="rt" id="rt"><span>San Marzano — four de Gênes — longue fermentation — panuozzo — tranché maison — tiramisu maison —&nbsp;</span></div></div>
+
+<!-- 01 la pate -->
+<section class="pate" id="pate">
+  <div class="wrap">
+    <div class="chap rev"><span class="num">CAPITOLO 01</span><span class="fil"></span></div>
+    <div class="duo">
+      <div>
+        <h2 class="titre rev">Tout commence par la <em>pâte.</em></h2>
+        <p class="rev">Une <b>longue fermentation</b>, peu de levure : la pâte devient légère, digeste,
+        aérée. On la cuit dans un <b>four fabriqué à Gênes</b>, à la bonne chaleur, le temps qu'il faut —
+        jusqu'au <b>cornicione</b> gonflé et marqué par la flamme.</p>
+        <p class="rev">C'est la base de tout, et c'est là que se joue la napolitaine. Le reste suit :
+        des produits justes, une carte courte, rien de superflu.</p>
+        <div class="puces rev"><span class="puce">Longue fermentation</span><span class="puce">Four de Gênes</span><span class="puce">Cornicione</span><span class="puce">Léger & digeste</span></div>
+      </div>
+      <div class="cadre rev"><img src="photos/four-photo.jpg" alt="Le four fabriqué à Gênes"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 produits -->
+<section class="prod">
+  <div class="wrap">
+    <div class="chap rev"><span class="num" style="color:var(--or)">CAPITOLO 02</span><span class="fil" style="background:linear-gradient(90deg,var(--or),transparent)"></span></div>
+    <h2 class="titre rev" style="color:#fff">Les <em>produits</em>, sans compromis.</h2>
+    <div class="g">
+      <div class="pc rev"><div class="ic">🍅</div><h3>San Marzano</h3><p>La tomate de référence de la napolitaine — douce, dense, cultivée au pied du Vésuve.</p></div>
+      <div class="pc rev"><div class="ic">🧀</div><h3>Tranché maison</h3><p>Fromages et charcuteries coupés sur place. Fior di latte, buffala, stracchino, taleggio.</p></div>
+      <div class="pc rev"><div class="ic">🇮🇹</div><h3>Petits producteurs</h3><p>Anchois de Cantabrie, olives taggiasche, peperoni de Calabre, miel de Saint-Cyr-sur-Mer.</p></div>
+      <div class="pc rev"><div class="ic">🥖</div><h3>Panuozzo</h3><p>Le sandwich napolitain à base de pâte à pizza — une spécialité, cuite au four.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 carte -->
+<section class="carte" id="carte">
+  <div class="wrap">
+    <div class="chap rev"><span class="num">CAPITOLO 03</span><span class="fil"></span></div>
+    <h2 class="titre rev">La carte, <em>prix compris.</em></h2>
+    <div class="cols" id="carte-liste"></div>
+    <p class="note">Panuozzos non produits du 15 juin au 30 septembre. Prix du restaurant.</p>
+  </div>
+</section>
+
+<!-- 04 commander -->
+<section class="direct" id="direct">
+  <div class="wrap">
+    <div class="chap rev"><span class="num" style="color:var(--tomate-c)">CAPITOLO 04</span><span class="fil" style="background:linear-gradient(90deg,var(--tomate-c),transparent)"></span></div>
+    <h2 class="titre rev">Commandez à la maison, <em>pas à la plateforme.</em></h2>
+    <div class="d2">
+      <div class="dc rev"><h3>🍕 À emporter — en direct</h3><p>Vous composez, la cuisine reçoit, vous passez prendre. Sans commission d'intermédiaire — le prix de la carte, rien d'autre.</p><button class="btn btn-tom" onclick="demo('Commande à emporter')">Composer ma commande</button></div>
+      <div class="dc rev"><h3>📞 Réserver / appeler</h3><p>Une table le soir, une grande commande ? On garde le contact direct, sans passer par une appli.</p><button class="btn btn-cr" onclick="demo('Contact direct')">Nous joindre</button></div>
+    </div>
+    <p class="note rev">Démonstration : dans la vraie version, la commande arrive directement au four et la relation client vous appartient — pas à Uber Eats.</p>
+  </div>
+</section>
+
+<!-- 05 avis -->
+<section class="tem" id="avis">
+  <div class="wrap">
+    <div class="chap rev"><span class="num">CAPITOLO 05</span><span class="fil"></span></div>
+    <h2 class="titre rev">Récent, et <em>déjà adopté.</em></h2>
+    <div class="b">
+      <div class="t rev"><div class="st">★★★★★</div><p>« La pâte est excellente, les produits frais, les pizzas bien garnies. Enfin une pizzeria comme ça ! »</p><div class="q">Google</div></div>
+      <div class="t rev"><div class="st">★★★★★</div><p>« Pâte exceptionnelle ainsi que la garniture. N'hésitez pas à essayer ces pizzas ! »</p><div class="q">Patricia C. · TripAdvisor</div></div>
+      <div class="t rev"><div class="st">★★★★★</div><p>« Top équipe, top service, top qualité des produits. Je recommande vivement. »</p><div class="q">Google</div></div>
+    </div>
+    <p class="total rev"><b>4,8/5</b> sur ~120 avis Google · presse locale « inspiration étoilée » (Var Actu).</p>
+  </div>
+</section>
+
+<!-- 06 infos -->
+<section class="infos" id="infos">
+  <div class="wrap">
+    <div class="chap rev"><span class="num">CAPITOLO 06</span><span class="fil"></span></div>
+    <h2 class="titre rev">Nous <em>trouver.</em></h2>
+    <div class="ig">
+      <div class="ic rev"><h3>Adresse</h3><p><b>777 av. du Maréchal de Lattre de Tassigny</b><br>83140 Six-Fours-les-Plages</p></div>
+      <div class="ic rev"><h3>Horaires</h3><ul><li><b>Tous les soirs</b><span>17h – 22h</span></li><li><b>Midi</b><span>Lun · Mar · Jeu · Ven</span></li></ul></div>
+      <div class="ic rev"><h3>Contact</h3><p><b>07 78 43 50 96</b><br>Sur place · à emporter · livraison<br><span style="color:#94886f;font-size:14px">Six-Fours · La Seyne sud · Sanary · dès 20 €</span></p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fm">PILI <em>PILI</em></div>
+  <div>777 av. du Maréchal de Lattre de Tassigny, 83140 Six-Fours-les-Plages · 07 78 43 50 96</div>
+  <div class="ev">Maquette de démonstration <b>Everywhere</b> — piste « nouvelle direction artistique ». Contenus et prix repris de la carte réelle ; aucune donnée collectée.</div>
+</footer>
+
+<div class="modal" id="modal"><div class="box">
+  <h3 id="mt" class="disp" style="font-size:24px;margin-bottom:8px">Démonstration</h3>
+  <p id="mx" style="font-size:15px;color:#4a4034"></p>
+  <div class="dtag">🛈 Dans la vraie version, ce parcours (choix, créneau, confirmation) arrive directement chez vous — sans commission.</div>
+  <button class="btn btn-ch" onclick="document.getElementById('modal').classList.remove('show')">Fermer</button>
+</div></div>
+
+<script>
+var MENU={
+ "Le pizze":[
+  ["Marinara",9,"Tomate, ail, origan, basilic"],["Prosciutto-Formaggio",12,"Jambon aux herbes, fior di latte"],
+  ["Margherita",12,"Tomate, fior di latte, parmesan, basilic"],["Anchois",12,"Anchois de Cantabrie, olives taggiasche"],
+  ["Peperoni",14,"Peperoni de Calabre, jalapeños"],["Buffala",14.5,"Cerises confites, buffala, Guérande"],
+  ["4 Formaggio",14.5,"Gorgonzola, mozzarella, fontina, taleggio"],["Chèvre Miel",15.5,"Chèvre, pancetta, miel de Saint-Cyr"],
+  ["Fungo",15,"Champignons rôtis, taleggio, oignons confits"],["Zucchini Cacio e Pepe",15.5,"Courgette, pesto, burrata"],
+  ["Montanara",15.5,"Pancetta, pomme de terre, taleggio"],["Perugina",16,"Saucisse porc noir au fenouil, pesto genovese"],
+  ["Roquette",16.5,"San Marzano, buffala, roquette, balsamique"]
+ ],
+ "I panuozzi":[["Cacio e Pepe",10,"Roquette, courgette, burrata"],["Prosciutto Burrata",10,"Jambon aux herbes, burrata"],["Montanara",10,"Pancetta, pomme de terre, taleggio"],["4 Formaggio",12,"4 fromages fondus"]],
+ "Dolce & bibite":[["Tiramisu du moment",5,"Maison, parfum variable"],["Soft 33 cl",2.5,""],["Bière Desperados",3.5,""],["Eau plate",2,""],["Eau gazeuse Orezza 50 cl",3.5,""]]
+};
+var EUR=function(n){return n.toFixed(2).replace('.',',')+' €';};
+var cl=document.getElementById('carte-liste');
+Object.keys(MENU).forEach(function(g){var t=document.createElement('div');t.className='gt';t.textContent=g;cl.appendChild(t);
+  MENU[g].forEach(function(p){var d=document.createElement('div');d.className='pl';d.innerHTML='<span class="n">'+p[0]+'</span>'+(p[2]?'<span class="d">'+p[2]+'</span>':'<span class="d"></span>')+'<span class="p">'+EUR(p[1])+'</span>';cl.appendChild(d);});});
+(function(){var els=document.querySelectorAll('.rev');
+  if(/[ty]=\d/.test(location.hash)){document.body.classList.add('qa');els.forEach(function(e){e.classList.add('vu')});var my=location.hash.match(/y=(\d+)/);if(my){document.documentElement.style.scrollBehavior='auto';window.scrollTo(0,+my[1]);}return;}
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('vu')});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vu');io.unobserve(e.target);}})},{rootMargin:'0px 0px -10% 0px'});els.forEach(function(e){io.observe(e)});
+})();
+(function(){var t=document.getElementById('rt');t.appendChild(t.firstElementChild.cloneNode(true));var x=0,w=t.firstElementChild.offsetWidth;(function b(){x=(x-0.5)%w;t.style.transform='translateX('+x+'px)';requestAnimationFrame(b);})();})();
+function demo(t){document.getElementById('mt').textContent=t;document.getElementById('mx').textContent='Parcours complet dans la version finale — ceci est la piste de direction artistique.';document.getElementById('modal').classList.add('show');}
+</script>
+<a href="../reprise/" style="position:fixed;left:14px;bottom:14px;z-index:9999;background:rgba(12,24,16,.92);color:#fff;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:9px 16px;font:600 12.5px/1 sans-serif;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.35)">◇ Voir l’autre version</a>
+</body>
+</html>
